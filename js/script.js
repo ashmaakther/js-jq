@@ -86,3 +86,36 @@ let txt= "width="+ w +  "height=" + h;
 function reSize(){
     document.getElementById('o_r').innerHTML= txt;
 }
+// additon
+let c, d;
+c=5;
+d=2;
+c += d;
+
+function add(){
+     document.getElementById('a_o').innerHTML= c;
+}
+// string
+let m= "Volvo"+15;
+function stringNumber(){
+    document.getElementById('s_n').innerHTML=m;
+}
+// arrays
+const cars= ["Saab", "Volvo","BMW"];
+function array(){
+    document.getElementById('j_a').innerHTML=cars;
+}
+// onload
+function onLoad(){
+    alert("page is loaded")
+}
+// length
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let size = fruits.length;
+function length(){
+    document. getElementById("l_p").innerHTML=size;
+}
+// ondblclick
+function onDblclick(){
+    document. getElementById('o_d').innerHTML="hello world";
+}
