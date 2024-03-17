@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS/JQ</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+  <body>
+    <div class="container">
+      <!--e-1 text change -->
+      <h2 class="text-danger">1.click the button to change the text</h2>
+      <button class="btn btn-dark" onclick="textChange()">Text change</button>
+      <h3 id="t_c">Lorem ipsum dolor sit amet.</h3>
+  
+      <hr>
+      <!--e-2 show date -->
+      <h2 class="text-danger">2.click the button to show the date</h2>
+      <button class="btn btn-dark" onclick="showDate()">Show Date</button>
+      <h3 id="s_d">Show date</h3>
+
+      <hr>
+      <!--e-3 bulb on/off -->
+      <h2 class="text-danger">3.click the button to on/off the bulb</h2>
+      <button class="btn btn-dark" onclick="bulbOn()">Bulb On</button>
+      <button class="btn btn-dark" onclick="bulbOff()">Bulb Off</button>
+      <img id="bulb" src="images/bulb_off.gif" alt="">
+      
+      <hr>
+      <!--e-4 color change -->
+      <h2 class="text-danger">4.click the button to change the color</h2>
+      <button class="btn btn-dark" onmousemove="colorChange()">Change Color</button>
+      <h3 id="c_c">Lorem ipsum dolor sit amet.</h3>
+
+      <hr>
+      <!--e-5 show/hide -->
+      <h2 class="text-danger">5.click the button to show/hide the element</h2>
+      <button class="btn btn-dark" onclick="textShow()">Show</button>
+      <button class="btn btn-dark" onclick="textHide()">Hide</button>
+      <h3 id="text">Lorem ipsum dolor sit amet.</h3>
+      <hr>
+      <!--e-6 variable -->
+      <h2 class="text-danger">6.click the button to calculate the data</h2>
+      <button class="btn btn-dark" onclick="calculation()">Calculation</button>
+      <h3 id="value">value</h3>
+
+      <!--e-7 let -->
+      <h2 class="text-danger">7.click the button to calculate the data</h2>
+      <button class="btn btn-dark" onclick="data()">calculate</button>
+      <h3 id="l_v">value</h3>
+
+      <hr>
+       <!--e-8 text change by class -->
+       <h2 class="text-danger">8.click the button to change the text by class name</h2>
+       <button class="btn btn-dark" onclick="textChange()">class name</button>
+       <h3 id="t_cc" class="t_cc">Lorem ipsum dolor sit amet.</h3>
+       <h3 id="t_cc" class="t_cc">Lorem ipsum dolor sit amet.</h3>
+       <h3 id="t_cc" class="t_cc">Lorem ipsum dolor sit amet.</h3>
+      
+       <hr>
+        <!--e-9 text change by tag -->
+        <h2 class="text-danger">9.click the button to change the text by tag name</h2>
+        <button class="btn btn-dark" onclick="textChange()"> textchange</button>
+        <h4 id="t_t" class="t_t">Lorem ipsum dolor sit amet.</h4>
+        <h4 id="t_t" class="t_t">Lorem ipsum dolor sit amet.</h4>
+        <h4 id="t_t" class="t_t">Lorem ipsum dolor sit amet.</h4>
+        
+        <hr>
+        <!--e-10 oninput -->
+        <h2 class="text-danger">10. The oninput event</h2>
+        <h3 id="o_i">Write something in the text area</h3>
+        <input type="text" id="myInput" oninput="inputText()">
+
+        <hr>
+        <!--e11 onchange -->
+        <h2 class="text-danger">11.Select a new car from the list.</h2>
+        <select name="#" id="mySelect" onchange="selectOption()">
+          <option value="Audi">Audi</option>
+          <option value="BMW">BMW</option>
+          <option value="Volvo">Volvo</option>
+        </select>
+        <h3 id="o_c">select your favorite car</h3>
+
+        <hr>
+        <!-- e12 round number -->
+        <h2 class="text-danger">12.round a number to the nearest integer:</h2>
+        <button class="btn btn-dark" onclick="mathRound()">round number</button>
+        <h3 id="r_n">math round method</h3>
+        
+        <hr>
+        <!--e13 oncopy -->
+        <h2 class="text-danger">13.copy the text</h2>
+        <input type="text" oncopy="copyText()" value="try to copy me">
+        <h3 id="o_c"></h3>
+       
+        <hr>
+        <!--e14 mousedown -->
+        <h2 class="text-danger">14.The onmousedown event</h2>
+        <button class="btn btn-dark" onmousedown="mouseDown()"> color change by using onmousedown</button>
+        <p id="m_d">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <hr>
+        <!--e15 oninvalid -->
+        <h2 class="text-danger">15.oninvalid event</h2>
+        <form action="#" method="get">
+          <label for="fname">First Name:</label>
+          <input type="text" oninvalid="alert('must fill out the form')" name="fname" id="fname" required>
+          <input type="submit" value="submit">
+        </form>
+        <hr>
+        <!-- e16 onresize -->
+        <h2 class="text-danger">16.The onresize event</h2>
+        <button class="btn btn-dark" onresize="(reSize)"> resize the browzer window to display height and width</button>
+        <p id="o_r">value</p>
+
+
+
+
+
+    
+
+
+
+        
+      
+  
+      </div>
+
+      
+    
+    
+    
+    <!-- js links -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
